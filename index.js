@@ -3,6 +3,7 @@ try {
 	const { token, clientId, guildId } = require('./config.json');
 } catch {
 	console.error("There was no cofig.json file. Needs token, client id");
+	return;
 }
 
 const fs = require('node:fs');
